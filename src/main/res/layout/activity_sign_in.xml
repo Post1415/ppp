@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".signIn">
+
+    <ImageView
+        android:id="@+id/noon_image_view"
+        android:layout_width="250dp"
+        android:layout_height="350dp"
+        android:layout_marginBottom="10dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/noon"
+        />
+
+    <TextView
+        android:id="@+id/username_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/noon_image_view"
+        android:text="username"
+        android:textAllCaps="true"/>
+
+    <EditText
+        android:id="@+id/username_edit_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="username/email"
+        android:layout_below="@id/username_text_view"
+        android:inputType="text"/>
+
+    <TextView
+        android:id="@+id/password_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/username_edit_view"
+        android:text="password"
+        android:textAllCaps="true"
+        />
+
+    <EditText
+        android:id="@+id/password_edit_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:layout_below="@id/password_text_view"
+        android:hint="password"/>
+
+    <Button
+        android:id="@+id/register_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="register"
+        android:layout_below="@id/password_edit_view"/>
+
+    <Button
+        android:id="@+id/sign_in_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/password_edit_view"
+        android:layout_toRightOf="@id/register_button"
+        android:text="sign in"
+        android:textAllCaps="true"
+        />
+
+    <TextView
+        android:id="@+id/skip_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="5dp"
+        android:layout_marginRight="5dp"
+        android:text="skip!"
+        android:textAllCaps="true"
+        />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="20dp"
+        android:visibility="gone" />
+
+</RelativeLayout>

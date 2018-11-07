@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="5dp"
+    android:layout_marginTop="5dp"
+    android:layout_marginRight="5dp"
+    tools:context=".ownerRegister">
+
+    <TextView
+        android:id="@+id/invitation_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Invitation code"
+        android:textAllCaps="true" />
+
+    <EditText
+        android:id="@+id/invitation_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/invitation_text_view"
+        android:inputType="text" />
+
+    <TextView
+        android:id="@+id/basic_info_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/invitation_edit_text"
+        android:text="Basic Info." />
+
+    <EditText
+        android:id="@+id/name_owner_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/basic_info_text_view"
+        android:hint="name" />
+
+    <EditText
+        android:id="@+id/username_owner_edit_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/name_owner_edit_text"
+        android:hint="username" />
+
+    <EditText
+        android:id="@+id/password_owner_edit_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:layout_below="@id/username_owner_edit_view"
+        android:hint="password" />
+
+
+    <Button
+        android:id="@+id/submit_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/password_owner_edit_view"
+        android:text="submit" />
+
+
+</RelativeLayout>
